@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AuditionApp</title>
+    <title>Audition App</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,12 @@
   </head>
 
   <body>
+    <header>
+      <%= link_to 'Home', root_path %> |
+      <%= link_to 'Profiles', actors_path %> |
+      <%= link_to 'Contact Us', contact_path %> |
+      <a href="http://www.google.com" target="_blank">Google!</a>
+    </header>
     <%= yield %>
   </body>
 </html>

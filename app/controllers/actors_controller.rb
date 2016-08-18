@@ -37,7 +37,7 @@ class ActorsController < ApplicationController
   def destroy
     @actor = Actor.find(params[:id])
     @actor.destroy
-    redirect_to actor_path
+    redirect_to actors_path
   end
 
   private

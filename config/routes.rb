@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  root to: 'static_pages#home'
 
-  root to: 'actors#index'
+  get '/contact', to: 'static_pages#contact', as: 'contact'
 
   resources :actors
 

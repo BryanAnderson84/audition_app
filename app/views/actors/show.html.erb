@@ -1,0 +1,25 @@
+<h1><%= @actor.name %>'s Profile </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Day Rate</th>
+      <th>Agent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> <%= @actor.age %> </td>
+      <td> <%= @actor.gender %> </td>
+      <td> <%= @actor.day_rate %> </td>
+      <td> <%= @actor.agent %> </td>
+    </tr>
+  </tbody>
+</table>
+
+<%= link_to 'Edit Profile', edit_actor_path(@actor) %> |
+<%= link_to 'Delete Profile', actor_path(@actor), method: :delete %>
+<br />
+<%= link_to 'All Actors', actors_path %>

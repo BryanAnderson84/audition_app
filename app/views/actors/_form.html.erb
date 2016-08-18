@@ -1,0 +1,36 @@
+<% if @actor.errors.any? %>
+  <ul>
+    <% @actor.errors.full_messages.each do |error| %>
+    <li> <%= error %> </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @actor do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <br>
+  <br>
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+
+  <br>
+  <br>
+  <%= f.label :gender %>
+  <%= f.text_field :gender %>
+
+  <br>
+  <br>
+  <%= f.label :day_rate %>
+  <%= f.number_field :day_rate %>
+
+  <br>
+  <br>
+  <%= f.label :agent %>
+  <%= f.check_box :agent %>
+
+  <br>
+  <br>
+  <%= f.submit %>
+<% end %>

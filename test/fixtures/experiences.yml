@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tv: MyString
+  film: MyString
+  imdb: MyString
+  acting_style: MyString
+  availability: false
+
+two:
+  tv: MyString
+  film: MyString
+  imdb: MyString
+  acting_style: MyString
+  availability: false
